@@ -1,1 +1,4 @@
-[lsp]2024/05/07 17:37:22 main.go:12: Hey there!!
+[lsp]2024/05/08 00:08:23 main.go:15: Hey there!!
+[lsp]2024/05/08 00:08:23 main.go:32: Received msg with method: initialize
+[lsp]2024/05/08 00:08:23 main.go:40: Connected to: Neovim 0.9.4
+[lsp]2024/05/08 00:08:23 main.go:49: Sent the reply

@@ -2,26 +2,52 @@ package main
 
 import (
 	"bufio"
-	"os"
+	"encoding/json"
 	"log"
-	"github.com/benodiwal/lsp/rpc"
+	"os"
+
+	"github.com/benodiwal/lspls/lsp"
+	"github.com/benodiwal/lspls/rpc"
 )
 
 func main() {
-	logger := getLogger("/home/user/personal/lsp/log.txt")
+	logger := getLogger("/home/user/personal/lspls/log.txt")
 	logger.Println("Hey there!!")
 
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Split(rpc.Split)
 
 	for scanner.Scan() {
-		msg := scanner.Text()
-		handleMessage(logger, msg)
+		msg := scanner.Bytes()
+		method, contents,  err := rpc.DecodeMessage(msg)
+		if err != nil {
+			logger.Printf("Got an error: %s", err)
+			continue
+		}
+		handleMessage(logger, method, contents)
 	}
 }
 
-func handleMessage(logger *log.Logger, msg any) {
-	logger.Panicln(msg)
+func handleMessage(logger *log.Logger, method string, contents []byte) {
+	logger.Printf("Received msg with method: %s", method)
+
+	switch method {
+		case "initialize":
+			var request lsp.InitializeRequest
+			if err := json.Unmarshal(contents, &request); err != nil {
+				logger.Printf("Hey, we couldn't parse this: %s", err)
+			}
+			logger.Printf("Connected to: %s %s", request.Params.ClientInfo.Name, request.Params.ClientInfo.Version)
+
+			// Reply
+			msg := lsp.NewInitializeResponse(request.ID)
+			reply := rpc.EncodeMessage(msg)
+
+			writer := os.Stdout
+			writer.Write([]byte(reply))
+
+			logger.Printf("Sent the reply")
+	}
 } 
 
 func getLogger(filename string) *log.Logger {

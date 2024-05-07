@@ -1,3 +1,3 @@
-module github.com/benodiwal/lsp
+module github.com/benodiwal/lspls
 
 go 1.22.2
