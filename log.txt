@@ -1,4 +1,71 @@
-[lsp]2024/05/08 00:08:23 main.go:15: Hey there!!
-[lsp]2024/05/08 00:08:23 main.go:32: Received msg with method: initialize
-[lsp]2024/05/08 00:08:23 main.go:40: Connected to: Neovim 0.9.4
-[lsp]2024/05/08 00:08:23 main.go:49: Sent the reply
+[lsp]2024/05/08 00:22:15 main.go:15: Hey there!!
+[lsp]2024/05/08 00:22:15 main.go:32: Received msg with method: initialize
+[lsp]2024/05/08 00:22:15 main.go:40: Connected to: Neovim 0.9.4
+[lsp]2024/05/08 00:22:15 main.go:49: Sent the reply
+[lsp]2024/05/08 00:22:17 main.go:32: Received msg with method: initialized
+[lsp]2024/05/08 00:22:17 main.go:32: Received msg with method: textDocument/didOpen
+[lsp]2024/05/08 00:23:48 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:23:48 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:23:50 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:23:51 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:23:51 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:23:53 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:23:53 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:23:55 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:23:56 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:16 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:16 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:16 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:17 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:17 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:17 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:17 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:17 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:18 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:18 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:18 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:18 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:19 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:19 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:19 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:19 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:20 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:20 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:20 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:20 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:29 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:30 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:30 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:30 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:31 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:31 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:36 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:36 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:37 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:37 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:38 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:38 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:38 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:39 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:39 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:40 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:48 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:51 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:52 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:53 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:53 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:53 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:53 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:54 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:54 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:54 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:55 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:24:55 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:25:00 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:25:01 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:25:02 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:25:02 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:25:03 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:25:03 main.go:32: Received msg with method: textDocument/didChange
+[lsp]2024/05/08 00:25:06 main.go:32: Received msg with method: textDocument/didSave
+[lsp]2024/05/08 00:25:06 main.go:32: Received msg with method: shutdown
