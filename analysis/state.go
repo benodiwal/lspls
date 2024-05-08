@@ -99,7 +99,20 @@ func (s *State) TextDocumentCodeAction(id int, uri string) lsp.TextDocumentCodeA
 			}
 
 			actions = append(actions, lsp.CodeAction{
-				Title: "Censor to VS C*ode",
+				Title: "Censor to VS C*de",
+				Edit: &lsp.WorkspaceEdit{Changes: censorChange},
+			})
+
+			humbleChange := map[string][]lsp.TextEdit{}
+			humbleChange[uri] = []lsp.TextEdit{
+				{
+					Range: LineRange(row, idx, idx+len("VS Code")),
+					NewText: "VS Code is also good :))",
+				},
+			}
+
+			actions = append(actions, lsp.CodeAction{
+				Title: "I am humble !!",
 				Edit: &lsp.WorkspaceEdit{Changes: censorChange},
 			})
 
