@@ -40,6 +40,11 @@ func (s *State) Hover(id int, uri string, position lsp.Position) lsp.HoverRespon
 
 func (s *State) Definition(id int, uri string, position lsp.Position) lsp.DefinitionResponse {
 
+	line := position.Line
+	if line <= 0 {
+		line += 1
+	}
+
 	return lsp.DefinitionResponse {
 				Response: lsp.Response{
 					RPC: "2.0",
@@ -49,11 +54,11 @@ func (s *State) Definition(id int, uri string, position lsp.Position) lsp.Defini
 					URI: uri,
 					Range: lsp.Range {
 						Start: lsp.Position{
-							Line: position.Line - 1,
+							Line: line - 1,
 							Character: 0,
 						},
 						End: lsp.Position{
-							Line: position.Line - 1,
+							Line: line - 1,
 							Character: 0,
 						},
 					},
