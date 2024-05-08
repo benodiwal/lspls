@@ -113,7 +113,7 @@ func (s *State) TextDocumentCodeAction(id int, uri string) lsp.TextDocumentCodeA
 
 			actions = append(actions, lsp.CodeAction{
 				Title: "I am humble !!",
-				Edit: &lsp.WorkspaceEdit{Changes: censorChange},
+				Edit: &lsp.WorkspaceEdit{Changes: humbleChange},
 			})
 
 		}
