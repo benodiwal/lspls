@@ -1,9 +1,3 @@
 # Lspls
 
-A simple lsp :)
-
-Neovim 
-
-VS Code 
-
-Yeaaah !!
+A simple Language Server Protocol (LSP) implementation written for learning purposes.
