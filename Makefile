@@ -1,3 +1,5 @@
+.PHONY: dev build run test
+
 build:
 	@echo "Building the application"
 	@go build -o build/lspls cmd/main.go
