@@ -2,7 +2,7 @@ package rpc_test
 
 import (
 	"testing"
-	"github.com/benodiwal/lspls/rpc"
+	"github.com/benodiwal/lspls/pkg/rpc"
 )
 
 type EncodingEaxmple struct {

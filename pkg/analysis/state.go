@@ -4,11 +4,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/benodiwal/lspls/lsp"
+	"github.com/benodiwal/lspls/pkg/lsp"
 )
 
 type State struct {
-	Documents map[string]string // map of file names to content of the files
+	// map of file names to content of the files
+	Documents map[string]string
 }
 
 func NewState() State {

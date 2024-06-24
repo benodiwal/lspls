@@ -3,17 +3,27 @@ package main
 import (
 	"bufio"
 	"encoding/json"
+	"fmt"
 	"io"
 	"log"
 	"os"
 
-	"github.com/benodiwal/lspls/analysis"
-	"github.com/benodiwal/lspls/lsp"
-	"github.com/benodiwal/lspls/rpc"
+	"github.com/benodiwal/lspls/pkg/analysis"
+	"github.com/benodiwal/lspls/pkg/lsp"
+	"github.com/benodiwal/lspls/pkg/rpc"
+	"github.com/benodiwal/lspls/pkg/utils"
 )
 
 func main() {
-	logger := getLogger("/home/user/personal/lspls/log.txt")
+	currDir, err := os.Getwd()
+	if err != nil {
+		panic("Error getting current working directory")
+	}
+
+	loggerFilePath := currDir + "/" + utils.LOGGER_FILE
+	fmt.Printf("Check file: %s for logs\n", loggerFilePath)
+
+	logger := getLogger(loggerFilePath)
 	logger.Println("Hey there!!")
 
 	state := analysis.NewState()

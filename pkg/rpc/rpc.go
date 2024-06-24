@@ -27,7 +27,6 @@ func DecodeMessage(msg []byte) (string, []byte, error) {
 		return "", nil, errors.New("did not find separator")
 	}
 
-	// Content-Length: <number>
 	contentLengthBytes := header[len("Content-Length: "):]
 	contentLength, err := strconv.Atoi(string(contentLengthBytes))
 	if err != nil {
